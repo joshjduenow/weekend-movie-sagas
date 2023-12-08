@@ -50,7 +50,7 @@ It is also worth noting that some of the pre-existing code will only be necessar
 
 - [x] This view displays all of the movies in the movie database. 
 
-- [ ] When a movie poster (`<img>` element) is clicked, a user should be brought to the details page.
+- [ ] When a movie poster (`<img>` element) is clicked, a user should be brought to the details page. --Possible state used for this?
 
 - [x] Each of the "movie items" on this page each must have a `data-testid="movieItem"` attribute.
 
