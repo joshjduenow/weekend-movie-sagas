@@ -4,6 +4,9 @@ import { useSelector } from "react-redux";
 export default function MovieDetails() {
   const history = useHistory();
 
+  const genres = useSelector(store => store.genres);
+  const movieDetails = useSelector(store => store.movieDetails);
+
   const navigateHome = () => {
     history.push("/");
   };
@@ -14,7 +17,9 @@ export default function MovieDetails() {
         Back To Movie List
       </button>
       <div data-testid="movieDetails">
-        <h1>Movie Details</h1>
+        <h1>{movieDetails.title}</h1>
+        <img src={movieDetails.poster} alt={movieDetails.title} />
+        <p>{movieDetails.description}</p>
       </div>
     </>
   );
