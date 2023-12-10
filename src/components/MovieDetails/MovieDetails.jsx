@@ -9,14 +9,12 @@ export default function MovieDetails() {
 
   return (
     <>
-    <button 
-        data-testid="toList" 
-        onClick={navigateHome}>
-      Back To Movie List
-    </button>
-    <div data-testid="movieDetails">
+      <button data-testid="toList" onClick={navigateHome}>
+        Back To Movie List
+      </button>
+      <div data-testid="movieDetails">
         <h1>Movie Details</h1>
-    </div>
+      </div>
     </>
   );
 }
