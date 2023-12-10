@@ -1,4 +1,5 @@
 import { useHistory } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 export default function MovieDetails() {
   const history = useHistory();
