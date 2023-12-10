@@ -1,8 +1,8 @@
 import { createStore, combineReducers, applyMiddleware } from "redux";
-import logger from "redux-logger";
-import createSagaMiddleware from "redux-saga";
 import { takeEvery, put, takeLatest } from "redux-saga/effects";
 import axios from "axios";
+import logger from "redux-logger";
+import createSagaMiddleware from "redux-saga";
 
 // Create the rootSaga generator function
 function* rootSaga() {
@@ -36,7 +36,6 @@ function* setDetailsPage(action) {
 }
 
 function* getGenres(action) {
-  console.log(action.payload);
   try {
     const genres = yield axios.get(`/api/genres/${action.payload}`);
     console.log("looking genre data", genres.data);

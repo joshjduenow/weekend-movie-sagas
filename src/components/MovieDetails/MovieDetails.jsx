@@ -28,7 +28,7 @@ export default function MovieDetails({}) {
         <img src={movie.poster} />
         <h1>{movie.title}</h1>
         <p>{movie.description}</p>
-        <p> Genre:</p>
+        <h4> Genre:</h4>
 
         {genres.map((genre, i) => (
           <p key={i}>{genre.category}</p>
@@ -41,4 +41,3 @@ export default function MovieDetails({}) {
     </div>
   );
 }
-

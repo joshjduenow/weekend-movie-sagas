@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import React, { useEffect } from "react";
 import MovieItem from "../Movieitem/MovieItem";
 import "./MovieList.css";
 
@@ -13,7 +13,7 @@ export default function MovieList() {
 
   return (
     <main>
-      <h1>Movie List:</h1>
+      <h2>Movie List:</h2>
       <div>
         <section className="movies">
           {movies.map((movie, i) => (
