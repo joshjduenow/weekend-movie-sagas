@@ -1,9 +1,18 @@
-# Project Name
+# Movie Sagas
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+This project is the product of lessons learned from Sagas and how it works with the React environment.
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+For this project, I opted to create components for :
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+- App
+- Movie Details
+- Movie Items
+- Movie List
+
+These components all took input from a Store.js , details, genre and movie routers.
+
+A database was built in SQL which stored the data from each movie and was pulled in and renered on the DOM.
+
+I was able to complete some styling using CSS, MUI and some bootstrap.
