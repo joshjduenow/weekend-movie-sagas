@@ -14,14 +14,11 @@ export default function MovieList() {
   return (
     <main>
       <h2>Movie List:</h2>
-      <div>
-        <section className="movies">
-          {movies.map((movie, i) => (
-            <MovieItem movie={movie} key={i} />
-          ))}
-        </section>
+      <div className="movies">
+        {movies.map((movie, i) => (
+          <MovieItem movie={movie} key={i} />
+        ))}
       </div>
     </main>
   );
 }
-

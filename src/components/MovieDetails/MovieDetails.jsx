@@ -2,6 +2,9 @@ import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { useParams } from "react-router-dom";
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
+import "./MovieDetails.css"
 
 export default function MovieDetails({}) {
   const dispatch = useDispatch();
@@ -34,9 +37,9 @@ export default function MovieDetails({}) {
           <p key={i}>{genre.category}</p>
         ))}
 
-        <button data-testid="toList" onClick={backToList}>
-          🔙 To List
-        </button>
+        <Button variant="outlined" color="error" data-testid="toList" onClick={backToList}>
+          Back To List
+        </Button>
       </div>
     </div>
   );

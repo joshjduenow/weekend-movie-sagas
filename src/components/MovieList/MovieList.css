@@ -1,4 +1,11 @@
 .movies {
-    display : flex;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+img {
+    height: 15rem;
+  }
+h2 {
+    font-family: 'Courier New', Courier, monospace;
 }
