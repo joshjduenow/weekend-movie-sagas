@@ -16,3 +16,6 @@ These components all took input from a Store.js , details, genre and movie route
 A database was built in SQL which stored the data from each movie and was pulled in and renered on the DOM.
 
 I was able to complete some styling using CSS, MUI and some bootstrap.
+
+![](public/images/home.gif)
+![](public/images/details.gif)
