@@ -68,7 +68,6 @@ const genres = (state = [], action) => {
   }
 };
 
-// reducer for current details
 const details = (state = {}, action) => {
   switch (action.type) {
     case "SET_DETAILS":
